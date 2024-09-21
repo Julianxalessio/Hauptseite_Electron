@@ -15,7 +15,8 @@ const createWindow = () => {
       devTools: false
     },
   });
-
+  mainWindow.maximize()
+  mainWindow.show()
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, 'Hauptseite.html'));
 
